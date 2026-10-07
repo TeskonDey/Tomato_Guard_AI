@@ -1,0 +1,165 @@
+{
+  "benchmarks": {
+    "rf_baseline": 100.0,
+    "rf_optimized": 97.78,
+    "svm_baseline": 94.44,
+    "svm_optimized": 95.56
+  },
+  "selected_features_count": 14,
+  "selected_feature_names": [
+    "HSV_H_std",
+    "HSV_H_median",
+    "HSV_S_std",
+    "LAB_L_std",
+    "LAB_b_max",
+    "YCbCr_Cr_std",
+    "YCbCr_Cb_mean",
+    "YCbCr_Cb_std",
+    "texture_entropy",
+    "texture_energy",
+    "texture_contrast",
+    "texture_variance",
+    "texture_mean",
+    "shape_area"
+  ],
+  "best_hyperparameters": {
+    "n_estimators": 150,
+    "max_depth": 8,
+    "min_samples_split": 2,
+    "min_samples_leaf": 1
+  },
+  "confusion_matrix": [
+    [
+      18,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      18,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      16,
+      2,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      18,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      18
+    ]
+  ],
+  "class_names": [
+    "Alternaria alternata",
+    "Alternaria solani",
+    "Botrytis cinerea",
+    "Fusarium oxysporum",
+    "Healthy"
+  ],
+  "ga_history": [
+    {
+      "generation": 1,
+      "best_fitness": 0.9894,
+      "num_features": 19,
+      "best_params": {
+        "n_estimators": 200,
+        "max_depth": 16,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1
+      }
+    },
+    {
+      "generation": 2,
+      "best_fitness": 0.9894,
+      "num_features": 19,
+      "best_params": {
+        "n_estimators": 200,
+        "max_depth": 16,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1
+      }
+    },
+    {
+      "generation": 3,
+      "best_fitness": 0.9913,
+      "num_features": 22,
+      "best_params": {
+        "n_estimators": 150,
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1
+      }
+    },
+    {
+      "generation": 4,
+      "best_fitness": 0.9913,
+      "num_features": 22,
+      "best_params": {
+        "n_estimators": 150,
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1
+      }
+    },
+    {
+      "generation": 5,
+      "best_fitness": 0.9947,
+      "num_features": 20,
+      "best_params": {
+        "n_estimators": 200,
+        "max_depth": null,
+        "min_samples_split": 6,
+        "min_samples_leaf": 1
+      }
+    },
+    {
+      "generation": 6,
+      "best_fitness": 0.9964,
+      "num_features": 14,
+      "best_params": {
+        "n_estimators": 150,
+        "max_depth": 8,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1
+      }
+    },
+    {
+      "generation": 7,
+      "best_fitness": 0.9964,
+      "num_features": 14,
+      "best_params": {
+        "n_estimators": 150,
+        "max_depth": 8,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1
+      }
+    },
+    {
+      "generation": 8,
+      "best_fitness": 0.9964,
+      "num_features": 14,
+      "best_params": {
+        "n_estimators": 150,
+        "max_depth": 8,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1
+      }
+    }
+  ]
+}
